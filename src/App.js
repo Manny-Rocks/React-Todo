@@ -1,6 +1,7 @@
 import React from 'react';
 import TodoList from './components/TodoComponents/TodoList';
 import TodoForm from './components/TodoComponents/TodoForm';
+import './components/TodoComponents/Todo.css'
 
 
 class App extends React.Component {
@@ -58,11 +59,16 @@ class App extends React.Component {
  }
   render() {
     return (
-      <div>
-        <h2>Welcome to your Todo App!</h2>
-      </div>
-    );
-  }
+      <div className="todo">
+      <h1>TASK PLANNER</h1>
+      <h2>Do you got shit to do but dont know where to start?</h2>
+      <h4>Welp, here you go asshat(ur welcome)...smh:</h4>
+      <TodoList dos={this.state.dos}toggleCompleted={this.toggleCompleted}/>
+      <TodoForm task={this.state.task}handleChanges={this.handleChanges}addTodo={this.addTodo}clearCompleted={this.clearCompleted}
+      />
+    </div>
+  );
+}
 }
 
 export default App;
