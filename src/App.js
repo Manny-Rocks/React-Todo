@@ -62,7 +62,7 @@ class App extends React.Component {
       <div className="todo">
       <h1>TASK PLANNER</h1>
       <h2>Do you got shit to do but dont know where to start?</h2>
-      <h4>Welp, here you go asshat(ur welcome)...smh:</h4>
+      <h4>Welp, here you go pal(ur welcome)...smh:</h4>
       <TodoList dos={this.state.dos}toggleCompleted={this.toggleCompleted}/>
       <TodoForm task={this.state.task}handleChanges={this.handleChanges}addTodo={this.addTodo}clearCompleted={this.clearCompleted}
       />
